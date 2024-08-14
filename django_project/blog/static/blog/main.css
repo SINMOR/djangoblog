@@ -1,0 +1,12 @@
+/* styles.css */
+
+/* Example: Custom button style */
+.body {
+    background-color: #ff6347; /* Tomato color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
