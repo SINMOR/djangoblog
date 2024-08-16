@@ -11,3 +11,6 @@ class Post(models.Model):
         default=timezone.now
     )  # sets the current datetime only when a post is added
     author = models.ForeignKey(User, on_delete=models.CASCADE) # if  a user is deleted the post is also deleted 
+    
+    def __str__(self):
+        return self.title
