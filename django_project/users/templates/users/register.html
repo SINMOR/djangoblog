@@ -2,7 +2,7 @@
 {% load tailwind_filters %}
 <!-- {% load crispy_forms_tags %} -->
 {% block content%}
-    <div class="content-section max-w-md mx-auto p-6 bg-white rounded-lg shadow-md list-disc pl-5">
+    <div class="content-section max-w-md mx-auto p-6 bg-white rounded-lg shadow-md ">
         <form method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
@@ -17,7 +17,7 @@
         </form>
         <div class="border-t mt-6 pt-3">
             <small class="text-gray-600">
-                Already Have An Account? <a class="ml-2 text-blue-500 hover:text-blue-700 transition duration-300" href="#">Sign In</a>
+                Already Have An Account? <a class="ml-2 text-blue-500 hover:text-blue-700 transition duration-300" href="{% url 'login'%}">Sign In</a>
             </small>
         </div>
     </div> 
